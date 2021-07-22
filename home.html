@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NoovLe</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <style>
+    body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #1c1d25;
+    
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+}
+
+section {
+    background-color: #ffffff;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+footer {
+    background-color: #ffffff;
+    color: #1c1d25;
+    text-align: center;
+    padding: 120px;
+   
+
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+
+.header-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+    
+}
+
+.button {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(255, 127, 80);
+    text-align: center;
+    font-size: 18px;
+    padding-top: 5px;
+    margin-top: 20px;
+}
+
+/* Section */
+.sub-section-1 {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+.sub-section-2 {
+    display: flex;
+    justify-content: center;
+    padding: 170px;
+    background-color: #1c1d25;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+
+}
+
+
+
+
+
+
+  </style>
+
+  <body>
+   <div style="width: 100%;max-width:1920px ;min-width: 480px;height: 200px;">
+    <header id="fichier" >
+      <nav>
+        <h2 class="logo" >NoovLe</h2>
+       
+    </nav>
+  </br>
+</br>
+</br>
+      <div class="header-area" >
+        
+        <form action='recherche doc.php' method='post' enctype='multipart/form-data'>
+        </br>
+          <label  for="quelque" ><B> RECHERCHE DE DOCUMENT </B></label> </br>
+          <input  type="search" name="quelque" id="quelque" required >
+             
+          <input type="submit" value="Recherche" class="button"required >
+        </form>
+        </div>
+    </header>
+  <section class="sub-section-1" id="fichier">
+      
+
+
+<div class="header-area">
+    <form action='inexdsation doc.php' method='post' enctype='multipart/form-data'>
+
+      <label  for="quelque" align=center ><B>  INDEXATION DE DOCUMENT </B></label> <br>
+        <table border='1'align = center >
+        
+           
+           <td><INPUT NAME='myFileName' TYPE='file'size=30 required></td>
+        
+        
+        
+        <tr><td> keyword : <input type="text" name="mc" size=40 required><br></td></tr>
+        
+        
+        <tr><td>description  : <textarea name= "des" rows=5 cols=40 required >
+        </textarea>  </td></tr>
+        <tr><td><input type='submit' name='submit' class="button"
+  value=' Envoyer ' >
+  </td></tr></table>
+
+</br>
+  <a href="#image" >
+
+  <img src = 'down.gif' width= 100px height= 100px>  </a>
+  </form>
+</div>
+  
+  </section>
+
+  
+  <section class="sub-section-2" id="image">
+      
+
+
+    <div class="header-area">
+      <form action='recherche img.php' method='post' enctype='multipart/form-data'>
+        <label  for="quelque" ><B> RECHERCHE DE IMAGE</B></label> <br>
+        <input  type="search" name="quelque" id="quelque" required >
+           
+        <input type="submit" value="Recherche" class="button" >
+     
+        </form>
+    </div>
+      </section>
+  <!-- footer-->
+  <footer >
+
+
+
+    <form action='inexdsation img.php' method='post' enctype='multipart/form-data'>
+    
+      <label  for="quelque"  ><B> INDEXATION DE IMAGE  </B></label> <br>
+     <table border='1' align=center>
+     <tr>
+       <td><INPUT NAME='myFileName' TYPE='file'size=30 required></td>
+  </tr>
+     
+     
+    <tr>
+      <td> keyword     : <input type="text" name="mc" size=40 required><br></td>
+    </tr>
+   
+   
+   
+   </textarea> 
+   <tr><td><input type='submit' name='submit'
+    value=' Envoyer ' class="button">
+   </td></tr>
+    </table>
+    <a href="#fichier" >
+
+      <img src = 'up.gif' width=100px height=100px>  </a>
+     </form>
+  </footer>
+</div>
+  
+  </body>
+</html>
